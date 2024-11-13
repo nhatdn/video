@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video
+      id="video"
+      src="https://pub-1f6f1c828e6e4e7f897cc741768ca3e9.r2.dev/videos/1422e737-2bdb-435e-9f45-4884bbffbe01-netflix-after-effects-template-netflix-after-effects-template-netflix-after-effects-template.mp4"
+    ></video>
+    <script>
+      const video = document.getElementById("video");
+      window.addEventListener("click", () => {
+        video.play();
+      });
+
+      // content dom loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        window.dispatchEvent(new Event("click"));
+      });
+    </script>
+  </body>
+</html>
